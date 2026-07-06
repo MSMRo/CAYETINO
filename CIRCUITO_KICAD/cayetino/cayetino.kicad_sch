@@ -5,6 +5,387 @@
 	(uuid "b8a63b61-4564-40c4-ba25-638e94182398")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Micro_SD_Card_Det1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at -16.51 17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Micro_SD_Card_Det1"
+				(at 16.51 17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 52.07 17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2110151630_XKB-Connectivity-XKTF-015-N_C381082.pdf"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Micro SD Card Socket with one card detection pin"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector SD microsd"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "microSD*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Micro_SD_Card_Det1_0_1"
+				(polyline
+					(pts
+						(xy -8.89 -8.89) (xy -8.89 11.43) (xy -1.27 11.43) (xy 2.54 15.24) (xy 3.81 15.24) (xy 3.81 13.97)
+						(xy 6.35 13.97) (xy 7.62 15.24) (xy 20.32 15.24) (xy 20.32 -8.89) (xy -8.89 -8.89)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -7.62 10.795)
+					(end -5.08 9.525)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 8.255)
+					(end -5.08 6.985)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 5.715)
+					(end -5.08 4.445)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 3.175)
+					(end -5.08 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 0.635)
+					(end -5.08 -0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 -1.905)
+					(end -5.08 -3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 -4.445)
+					(end -5.08 -5.715)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 -6.985)
+					(end -5.08 -8.255)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 16.51 15.24) (xy 16.51 16.51) (xy -19.05 16.51) (xy -19.05 -16.51) (xy 16.51 -16.51) (xy 16.51 -8.89)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Micro_SD_Card_Det1_1_1"
+				(pin bidirectional line
+					(at -22.86 10.16 0)
+					(length 3.81)
+					(name "DAT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 7.62 0)
+					(length 3.81)
+					(name "DAT3/CD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 5.08 0)
+					(length 3.81)
+					(name "CMD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -22.86 2.54 0)
+					(length 3.81)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 0 0)
+					(length 3.81)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -22.86 -2.54 0)
+					(length 3.81)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -5.08 0)
+					(length 3.81)
+					(name "DAT0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -7.62 0)
+					(length 3.81)
+					(name "DAT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -22.86 -12.7 0)
+					(length 3.81)
+					(name "DET"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -12.7 180)
+					(length 3.81)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_Module:RaspberryPi_Pico_Extensive"
 			(pin_names
 				(offset 0.762)
@@ -2297,6 +2678,12 @@
 		(color 0 0 0 0)
 		(uuid "5d1f2ecd-936c-4ade-be3c-a498b6e53a9f")
 	)
+	(junction
+		(at 190.5 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db051bd5-0d45-4a34-b449-737b13f2f244")
+	)
 	(wire
 		(pts
 			(xy 119.38 60.96) (xy 119.38 80.01)
@@ -2359,6 +2746,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 161.29) (xy 170.18 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08b8b107-200e-4abb-9328-a38ad6b740e9")
+	)
+	(wire
+		(pts
 			(xy 198.12 102.87) (xy 190.5 102.87)
 		)
 		(stroke
@@ -2379,6 +2776,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 180.34) (xy 146.05 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14fbebe1-ad9c-402e-9aa1-69df1c1853c7")
+	)
+	(wire
+		(pts
 			(xy 115.57 48.26) (xy 46.99 48.26)
 		)
 		(stroke
@@ -2386,6 +2793,16 @@
 			(type default)
 		)
 		(uuid "1aabd9cb-bce5-4348-8f47-dacf965a3159")
+	)
+	(wire
+		(pts
+			(xy 143.51 180.34) (xy 143.51 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bab303d-dd0f-46ff-b874-a26cda71d49e")
 	)
 	(wire
 		(pts
@@ -2446,6 +2863,16 @@
 			(type default)
 		)
 		(uuid "24130f8f-94fe-4dd4-b0c2-b8c55114ae28")
+	)
+	(wire
+		(pts
+			(xy 140.97 180.34) (xy 140.97 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26fbdc92-3184-4047-8bdc-9e1c61ae0936")
 	)
 	(wire
 		(pts
@@ -2659,6 +3086,46 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 193.04) (xy 146.05 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6461bbbf-126f-424a-991b-b0eb07a6d056")
+	)
+	(wire
+		(pts
+			(xy 190.5 77.47) (xy 204.47 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71b07fda-a2e7-416c-af92-a4ab8ceec32f")
+	)
+	(wire
+		(pts
+			(xy 138.43 180.34) (xy 138.43 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74ab1a93-69b9-49d6-8993-e0f119556ad9")
+	)
+	(wire
+		(pts
+			(xy 190.5 161.29) (xy 170.18 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74d41f0d-9021-4c1b-8b9c-9ed0bc0c4db1")
+	)
+	(wire
+		(pts
 			(xy 45.72 109.22) (xy 45.72 111.76)
 		)
 		(stroke
@@ -2676,6 +3143,16 @@
 			(type default)
 		)
 		(uuid "7d37ba9a-0523-4c49-9a97-dbaa92458b59")
+	)
+	(wire
+		(pts
+			(xy 167.64 123.19) (xy 190.5 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e76c0cf-d78b-4def-88e1-838cd397f639")
 	)
 	(wire
 		(pts
@@ -2819,6 +3296,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 180.34) (xy 148.59 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aced23e8-a4f9-4b61-8425-7ae2f9af3b72")
+	)
+	(wire
+		(pts
 			(xy 44.45 58.42) (xy 52.07 58.42)
 		)
 		(stroke
@@ -2949,6 +3436,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 123.19) (xy 190.5 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce19786c-8332-4a68-92f5-56f0d57ee746")
+	)
+	(wire
+		(pts
 			(xy 124.46 92.71) (xy 144.78 92.71)
 		)
 		(stroke
@@ -2956,6 +3453,26 @@
 			(type default)
 		)
 		(uuid "d2c0887e-ddba-4635-a054-df18ce9d2056")
+	)
+	(wire
+		(pts
+			(xy 190.5 74.93) (xy 204.47 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3061005-b2ce-451d-8ed6-fc28de2412da")
+	)
+	(wire
+		(pts
+			(xy 135.89 180.34) (xy 135.89 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d83f4caf-ab59-4606-a2b9-03c0b6890dd0")
 	)
 	(wire
 		(pts
@@ -2986,6 +3503,16 @@
 			(type default)
 		)
 		(uuid "df7ec3b5-9722-4bcd-bf13-5d2684ea0c6d")
+	)
+	(wire
+		(pts
+			(xy 190.5 82.55) (xy 204.47 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e13b4f56-ba39-4218-b909-33129b2a1ab4")
 	)
 	(wire
 		(pts
@@ -3029,6 +3556,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 110.49) (xy 190.5 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7403537-0c76-416e-b6c4-a186e4d1c033")
+	)
+	(wire
+		(pts
 			(xy 124.46 73.66) (xy 124.46 92.71)
 		)
 		(stroke
@@ -3059,6 +3596,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 80.01) (xy 204.47 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5a55449-1c7c-45e8-8730-eedf1df0894e")
+	)
+	(wire
+		(pts
 			(xy 190.5 100.33) (xy 195.58 100.33)
 		)
 		(stroke
@@ -3076,6 +3623,116 @@
 			(type default)
 		)
 		(uuid "fcbd0488-3243-43b4-a2c4-f41d22964315")
+	)
+	(label "MISO"
+		(at 148.59 186.69 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "01cdf464-b0c3-4824-a788-ce1d833a7851")
+	)
+	(label "MOSI"
+		(at 204.47 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "13091ab4-a2fd-4091-b4cd-8c754de4df30")
+	)
+	(label "3V3"
+		(at 140.97 186.69 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e14b975-a726-40f9-a217-d569876bdd23")
+	)
+	(label "3V3"
+		(at 172.72 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c0dcacc-fd01-42a7-bc0e-acfa147434fb")
+	)
+	(label "SCK"
+		(at 204.47 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "88b9366a-aca6-4ec6-9ca4-16830aecc737")
+	)
+	(label "SCK"
+		(at 143.51 186.69 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8ab3e106-841d-41bd-88e9-3513ae857dc6")
+	)
+	(label "MOSI"
+		(at 138.43 186.69 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8af629e3-89d0-4708-b7ac-04f01ff4c4e5")
+	)
+	(label "CS"
+		(at 204.47 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "99182cf0-392e-43d3-a185-7584ee3e9bc2")
+	)
+	(label "GND"
+		(at 146.05 186.69 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9dd779af-1794-4613-a031-de51b16a6531")
+	)
+	(label "CS"
+		(at 135.89 186.69 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a3bb0571-1cb8-4a5d-843d-7e06c75931c0")
+	)
+	(label "MISO"
+		(at 204.47 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e830d3fb-ceb1-4855-a789-d88a83b1fc67")
 	)
 	(symbol
 		(lib_id "PCM_arduino-library:Arduino_Uno_R3_Shield")
@@ -3480,6 +4137,112 @@
 			(project "cayetino"
 				(path "/b8a63b61-4564-40c4-ba25-638e94182398"
 					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Micro_SD_Card_Det1")
+		(at 143.51 157.48 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "685b5282-8bb2-4cb8-9b11-9395b64a508b")
+		(property "Reference" "J1"
+			(at 161.29 155.5749 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Micro_SD_Card_Det1"
+			(at 161.29 158.1149 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Module:J_SD_Card-micro_socket_A"
+			(at 125.73 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2110151630_XKB-Connectivity-XKTF-015-N_C381082.pdf"
+			(at 140.97 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Micro SD Card Socket with one card detection pin"
+			(at 143.51 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b646d2db-be8a-4a26-a7d8-73c9c14e12aa")
+		)
+		(pin "3"
+			(uuid "fa622fdc-71a5-4197-b609-e94118477271")
+		)
+		(pin "5"
+			(uuid "51f2b7dd-eb8c-45c4-8744-10c951df2083")
+		)
+		(pin "9"
+			(uuid "f6a1e797-2e5f-40c0-97b5-2fcb251afa2e")
+		)
+		(pin "4"
+			(uuid "b0bf7916-0d74-4c2f-9786-3361404b61c5")
+		)
+		(pin "SH"
+			(uuid "df62075e-f871-488d-b4aa-7d2453420e11")
+		)
+		(pin "6"
+			(uuid "e9964fa8-cc1d-4d6e-af30-de1962ee7abc")
+		)
+		(pin "8"
+			(uuid "ae9375c3-ee65-4420-87ac-72789d96c753")
+		)
+		(pin "1"
+			(uuid "4afe95d4-edc4-44d2-bbd2-de76947bfb4e")
+		)
+		(pin "7"
+			(uuid "fb2be502-45c1-4b7a-8fc8-dbe96267a6a4")
+		)
+		(instances
+			(project "cayetino"
+				(path "/b8a63b61-4564-40c4-ba25-638e94182398"
+					(reference "J1")
 					(unit 1)
 				)
 			)
