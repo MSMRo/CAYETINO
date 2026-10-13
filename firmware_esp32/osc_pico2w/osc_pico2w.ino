@@ -20,5 +20,5 @@ void loop() {
   Serial.println(",0");
   
   // Retardo de 10ms para estabilizar la gráfica
-  delay(1);
+  delay(20);
 }

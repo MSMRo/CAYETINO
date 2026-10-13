@@ -2,6 +2,11 @@
 
 Dispositivo generador de biopotenciales y señales sintéticas (EKG, EMG, EEG, RSP, PPG y ondas básicas) para entrenamiento y docencia de estudiantes de Ingeniería Biomédica.
 
+![](./IMGS/Screenshot%202026-10-12%20232222.png)
+
+![](./IMGS/Screenshot%202026-10-12%20232209.png)
+
+
 El sistema se compone de dos módulos interconectados:
 1. **Frontend / Interfaz de Control (Streamlit)**: Aplicación interactiva en Python que permite diseñar ondas básicas, sintetizar señales fisiológicas avanzadas con la librería **NeuroKit2**, inyectar fuentes de ruido clínico (interferencia electromagnética a 60 Hz, ruido térmico blanco y artefactos de movimiento), transferir los archivos vía Serial y gestionar la reproducción del hardware.
 2. **Firmware de Adquisición y Emisión DAC (ESP32 en Arduino)**: Programa embebido que recibe los datos por comunicación serial por bloques con ACK, los almacena en el sistema de archivos no volátil **LittleFS**, y los reproduce en bucle continuo a través de su convertidor digital-analógico interno de 8 bits (**GPIO 25 / GPIO 26**) mediante un temporizador por hardware de 64 bits (`esp_timer`).
@@ -35,6 +40,8 @@ En una terminal con Python instalado:
 ```powershell
 pip install -r app_streamlit/requirements.txt
 ```
+
+Funciona con uv mejor.
 
 ### 2. Carga del Firmware en el ESP32
 1. Conecta la placa ESP32 por USB a tu computadora.
@@ -144,3 +151,7 @@ La comunicación entre Streamlit y el ESP32 se realiza a **115200 baudios** medi
 | `DELETE:<nombre>` | `OK_DELETE:<nombre>` | Elimina un archivo de LittleFS. |
 | `FORMAT` | `OK_FORMAT` | Formatea la memoria flash LittleFS. |
 | `SET_DAC_PIN:<pin>` | `OK_DAC_PIN:<pin>` | Configura el pin DAC activo (25 o 26). |
+
+![](./IMGS/Screenshot%202026-10-12%20232245.png)
+
+![](./IMGS/Screenshot%202026-10-12%20232310.png)
