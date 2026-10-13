@@ -1,0 +1,25 @@
+[project]
+name = "cayetino"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "MSMRo", email = "moises.meza@upch.pe" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "neurokit2>=0.2.13",
+    "numpy>=2.5.4",
+    "pandas>=2.3.3",
+    "plotly>=7.1.0",
+    "pyserial>=3.5",
+    "scipy>=1.18.1",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+cayetino = "cayetino:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"

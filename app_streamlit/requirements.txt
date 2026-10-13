@@ -1,0 +1,7 @@
+streamlit>=1.30.0
+pyserial>=3.5
+neurokit2>=0.2.7
+numpy>=1.24.0
+scipy>=1.11.0
+pandas>=2.0.0
+plotly>=5.18.0
