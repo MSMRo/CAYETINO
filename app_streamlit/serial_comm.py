@@ -457,3 +457,29 @@ class CayetinoSerial:
         self.ser.write(f"SET_DAC_PIN:{pin}\n".encode('utf-8'))
         self.ser.flush()
         return True
+
+    def format_fs(self) -> bool:
+        """Formatea la memoria Flash (LittleFS) del ESP32."""
+        if self.simulation_mode:
+            self.sim_files.clear()
+            self.sim_status = {"playing": False, "filename": "", "fs": 0}
+            return True
+            
+        if not self.is_connected():
+            return False
+            
+        try:
+            self.ser.reset_input_buffer()
+            self.ser.write(b"FORMAT\n")
+            self.ser.flush()
+            
+            t0 = time.time()
+            while time.time() - t0 < 8.0:
+                if self.ser.in_waiting > 0:
+                    line = self.ser.readline().decode('utf-8', errors='ignore').strip()
+                    if "OK_FORMAT" in line:
+                        return True
+                time.sleep(0.05)
+        except Exception:
+            pass
+        return False

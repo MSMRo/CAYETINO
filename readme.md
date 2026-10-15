@@ -17,17 +17,34 @@ El sistema se compone de dos módulos interconectados:
 
 ```
 CAYETINO/
-├── app_streamlit/                    # Interfaz gráfica de usuario y control
+├── app_pyqt6/                        # Interfaz nativa de escritorio en PyQt6
+│   ├── main.py                      # Punto de entrada de la aplicación de escritorio
+│   ├── main_window.py               # Ventana principal e integración de pestañas
+│   ├── sidebar.py                   # Enlace serial, simulación y control DAC
+│   ├── tab_basic.py                 # Modo básico: formas de onda periódicas
+│   ├── tab_advanced.py              # Modo avanzado: biopotenciales y NeuroKit2
+│   ├── tab_manager.py               # Explorador de archivos LittleFS y reproducción DAC
+│   ├── tab_guide.py                 # Guía de hardware, circuito atenuador y protocolo
+│   ├── styles.py                    # Hoja de estilos moderna inspirada en Streamlit
+│   ├── workers.py                   # Subprocesos QThread asíncronos para Serial
+│   ├── signal_generator.py          # Motor de síntesis fisiológica y ruido
+│   └── serial_comm.py               # Driver de comunicación UART y LittleFS
+├── app_streamlit/                    # Interfaz web de usuario y control (Streamlit)
 │   ├── app.py                       # Aplicación principal de Streamlit
 │   ├── signal_generator.py          # Síntesis matemática, NeuroKit2 y ruido
 │   ├── serial_comm.py               # Driver de comunicación serial y LittleFS
 │   └── requirements.txt             # Dependencias en Python
+├── dist/
+│   └── Cayetino_ESP32/              # Carpeta de distribución del ejecutable Windows
+│       └── Cayetino_ESP32.exe       # Ejecutable nativo (.exe) para PC
 ├── firmware_esp32/
 │   └── cayetino_esp32/
 │       ├── cayetino_esp32.ino       # Código Arduino/C++ para ESP32
 │       └── README.md                # Guía de compilación y flasheo
 ├── CIRCUITO_KICAD/                  # Archivos de hardware y PCB
-├── run_app.bat                      # Lanzador directo de Streamlit para Windows
+├── run_cayetino_exe.bat             # Lanzador directo del ejecutable .exe compilado
+├── run_app_pyqt.bat                 # Lanzador de la app PyQt6 en Python
+├── run_app.bat                      # Lanzador de la app Streamlit
 └── README.md                        # Documentación general
 ```
 
@@ -35,26 +52,26 @@ CAYETINO/
 
 ## 🚀 Inicio Rápido
 
-### 1. Instalación de dependencias de Python
-En una terminal con Python instalado:
+### 1. Ejecutar el Ejecutable .EXE (Instalable/Portable en PC)
+No requiere tener Python instalado:
+- Haz doble clic en **`run_cayetino_exe.bat`** o abre directamente:
+  `dist\Cayetino_ESP32\Cayetino_ESP32.exe`
+
+### 2. Ejecutar la versión PyQt6 en Python
 ```powershell
-pip install -r app_streamlit/requirements.txt
+.\run_app_pyqt.bat
 ```
-
-Funciona con uv mejor.
-
-### 2. Carga del Firmware en el ESP32
-1. Conecta la placa ESP32 por USB a tu computadora.
-2. Abre Arduino IDE y carga el archivo:
-   `firmware_esp32/cayetino_esp32/cayetino_esp32.ino`
-3. Selecciona tu placa (ej. **ESP32 Dev Module**) y el puerto COM asignado.
-4. Presiona **Subir** (Upload).
+O directamente con Python:
+```powershell
+python app_pyqt6/main.py
+```
 
 ### 3. Ejecución de la Interfaz Streamlit
 Haz doble clic en `run_app.bat` o ejecuta:
 ```powershell
 python -m streamlit run app_streamlit/app.py
 ```
+
 
 ---
 
